@@ -11,27 +11,28 @@ const livrosEncontrados = [
         titulo: "O Pequeno Príncipe",
         autor: "Antoine de Saint-Exupéry",
         imagem: 'https://m.media-amazon.com/images/I/81TmOZIXvzL._SY522_.jpg',
-        disponivel: false
+        disponivel: true
     },
     {
         id: 3,
-        titulo: "1984",
-        autor: "George Orwell",
-        imagem: 'https://m.media-amazon.com/images/I/61t0bwt1s3L._SY522_.jpg',
+        titulo: "Haikyuu!!",
+        autor: "Haruichi Furudate",
+        imagem: 'https://m.media-amazon.com/images/I/515v+bLZ7ZL._SY445_SX342_ML2_.jpg',
         disponivel: true
     },
     {
         id: 4,
-        titulo: "A revolução dos bichos",
+        titulo: "A Revolução dos Bichos",
         autor: "George Orwell",
         imagem: 'https://m.media-amazon.com/images/I/91BsZhxCRjL._SY522_.jpg',
-        disponivel: true
+        disponivel: false
     },
 ];
 
 const resultadosBusca = document.getElementById("resultadosBusca");
 
 function exibirLivros(livros){
+
     livros.forEach(livro => {
         const card = document.createElement("div");
         card.classList.add("card-livro");
@@ -72,7 +73,7 @@ function exibirLivros(livros){
             status.classList.remove("disponivel");
             status.classList.add("indisponivel");
             livro.disponivel = false;
-            
+
         console.log(`Livro reservado: ${livro.titulo}`);
 
         });
@@ -85,7 +86,7 @@ function exibirLivros(livros){
 
         resultadosBusca.appendChild(card);
 
-    },);
+    });
 }
 
 exibirLivros(livrosEncontrados);

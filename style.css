@@ -1,8 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #002636;
     margin: 0;
     padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
 }
 
 header {
@@ -17,10 +21,10 @@ header {
 }
 
 .card-livro {
-    background-color: #fff;
+    background-color: #eafafe;
     border-radius: 8px;
     padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 9px 5px rgba(0, 176, 12, 0.1);
     text-align: center;
 }
 
@@ -40,11 +44,11 @@ header {
 }
 
 .disponivel {
-    color: green;
+    color: rgb(2, 154, 27);
 }
 
 .indisponivel {
-    color: red;
+    color: rgb(152, 0, 0);
 }
 
 button {
@@ -53,12 +57,12 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #8B0000;
+    background-color: #00689c;
     color: white;
 }
 
 button:disabled {
-    background-color: gray;
+    background-color: rgb(94, 94, 94);
     cursor: not-allowed;
 }
 .barra-pesquisa {
@@ -71,13 +75,13 @@ button:disabled {
     width: 300px;
     padding: 10px 15px;
     border-radius: 25px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     outline: none;
     font-size: 14px;
     transition: 0.3s;
 }
 
 .barra-pesquisa input:focus {
-    border-color: #8B0000;
-    box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+    border-color: #00ff55;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
