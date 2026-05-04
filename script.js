@@ -8,9 +8,9 @@ const livrosEncontrados = [
     },
     {
         id: 2, 
-        titulo: "O Pequeno Príncipe",
-        autor: "Antoine de Saint-Exupéry",
-        imagem: 'https://m.media-amazon.com/images/I/81TmOZIXvzL._SY522_.jpg',
+        titulo: "O Senhor dos Anéis",
+        autor: "J.R.R. Tolkein",
+        imagem: 'https://m.media-amazon.com/images/I/816C1V0nb7L._SY522_.jpg',
         disponivel: true
     },
     {
